@@ -31,11 +31,12 @@ DROP TABLE IF EXISTS `studient`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `studient` (
-  `id` int(11) DEFAULT NULL,
+  `id` int(11) NOT NULL,
   `nom` varchar(30) DEFAULT NULL,
   `prenom` varchar(50) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
-  `lieu_de_résidence` varchar(50) DEFAULT NULL
+  `lieu_de_résidence` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -58,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-03-12 12:28:37
+-- Dump completed on 2018-03-12 14:07:36
